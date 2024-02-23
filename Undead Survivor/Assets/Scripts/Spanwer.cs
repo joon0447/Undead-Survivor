@@ -28,7 +28,7 @@ public class Spanwer : MonoBehaviour
 
     void Spawn()
     {
-        GameObject enmey = GameManager.instance.pool.Get(level);
+        GameObject enmey = GameManager.instance.pool.Get(0);
         enmey.transform.position = spawnPoint[UnityEngine.Random.Range(1,spawnPoint.Length)].position;
         enmey.GetComponent<Enemy>().Init(spawnData[level]);
     }
