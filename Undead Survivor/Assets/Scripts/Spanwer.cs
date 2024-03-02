@@ -18,6 +18,7 @@ public class Spanwer : MonoBehaviour
     {
         timer += Time.deltaTime;
         level = Mathf.FloorToInt(GameManager.instance.gameTime / 10f);
+      
 
         if (timer > spawnData[level].spawnTime)
         {
